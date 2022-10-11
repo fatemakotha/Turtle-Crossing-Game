@@ -19,3 +19,13 @@ class Player(Turtle):
 
     def go_down(self):
         self.goto(self.xcor(), self.ycor() - MOVE_DISTANCE)
+
+
+
+    def go_to_start(self):
+        self.goto(STARTING_POSITION)
+    def is_at_finish(self):
+        if self.ycor() > FINISH_LINE_Y: #END OF SCREEN DETECTION METHOD!! **
+            return True
+        else:
+            return False
