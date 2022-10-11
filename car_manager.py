@@ -11,8 +11,11 @@ class CarManager(Turtle):
         super().__init__()
         self.penup()
         self.shape("square")
-        self.color(COLORS[random.randint(0, 7)])
+        self.color(COLORS[random.randint(0, 6)]) #**gives error at a certain value FIND OUT WHICHHH!!!!!
         self.shapesize(stretch_wid=1, stretch_len=2)
+        self.spawn_position = (random.randint(-300, 300), random.randint(-300, 300))
+        self.goto(self.spawn_position)
+
 
     def move_left(self):
         new_x = self.xcor() - 5
