@@ -14,7 +14,7 @@ screen.listen()
 screen.onkey(player.go_up, key="Up")
 screen.onkey(player.go_down, key="Down")
 
-
+cars = CarManager()
 
 
 
@@ -23,6 +23,7 @@ game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
+
 
 
 
