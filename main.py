@@ -8,12 +8,10 @@ screen = Screen()
 screen.setup(width=600, height=600)
 screen.tracer(0)
 
-tim = Turtle()
-tim.color("black")
-tim.shape("turtle")
-tim.penup()
-tim.goto(x=0, y=-280)
-tim.left(90)
+player = Player()
+
+
+
 
 
 
