@@ -10,6 +10,9 @@ screen.tracer(0)
 
 player = Player()
 
+screen.listen()
+screen.onkey(player.go_up, key="Up")
+screen.onkey(player.go_down, key="Down")
 
 
 
